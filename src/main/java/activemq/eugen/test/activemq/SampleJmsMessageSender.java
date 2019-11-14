@@ -1,16 +1,14 @@
 package activemq.eugen.test.activemq;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.core.JmsTemplate;
-
 import javax.jms.Queue;
+
 
 
 public class SampleJmsMessageSender {
 
-    @Autowired
+
     private JmsTemplate jmsTemplate;
-    @Autowired
     private Queue queue;
 
     public void setJmsTemplate(JmsTemplate jmsTemplate) {

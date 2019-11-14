@@ -19,10 +19,11 @@ public class ActivemqApplication implements ApplicationRunner {
 
 	@Override
 	public void run(ApplicationArguments applicationArguments) throws Exception {
-
+		/*
 		for(int i=0;i<100;i++){
 			sampleJmsMessageSender.sendTextMessage(Integer.toString(i));
-		}
+		}*/
+		sampleJmsMessageSender.sendMessage(new Employee("Tincho",28));
 	}
 
 }
